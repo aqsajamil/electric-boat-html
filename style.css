@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana;
+}
+
+header {
+  background-color: #FFDFE3;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  margin-left: 180px;
+  min-height: 100vh;
+}
+
+nav {
+  width: 180px;
+  min-height: 100vh;
+  background-color: #4c3c3c;
+  position: sticky;
+  top: 0;
+  float: left;
+}
+
+header h1 {
+  margin-left: 25%;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+}
+
+nav a:hover {
+  background-color: wheat;
+  color: #4c3c3c;
+}
+
+.main {
+  /* width: 60%; */
+  padding: 20px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.right {
+  background-color: #FFDFE3;
+  height: 100vh;
+  padding: 10px 15px;
+  width: 285px;
+}
+
+footer {
+  background-color: #4c3c3c;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 12px;
+  position: sticky;
+  z-index: 10;
+}
+
+/* contact page */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4c3c3c;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+@media only screen and (max-width:800px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:676px) {
+  header h1 {
+    margin-left: 15%;
+  }
+}
